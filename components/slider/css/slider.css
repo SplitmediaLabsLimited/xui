@@ -1,0 +1,138 @@
+#slider
+{
+	display: inline-flex;
+    vertical-align: middle;
+}
+
+
+#slider > *:not([type="text"])
+{
+    margin-top: 2px;
+}
+
+
+*
+{
+    outline: none;
+}
+
+input[type="range"]
+{
+    -webkit-appearance: none;
+    margin: 0;
+    border: 1px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    background-color: #111111;
+    width: 80px;
+    cursor: pointer;
+    height: 12px;
+    vertical-align: middle;    
+}
+
+input[type="range"]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #888888;   
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb
+{
+    background-color: #000000;       
+}
+
+input[type="range"]:not([disabled])::-webkit-slider-thumb:hover
+{
+    background-color: #EEEEEE;       
+}
+
+input[type="range"]:disabled
+{
+    background: transparent;
+}
+
+#increment,
+#decrement
+{
+    width: 12px;
+    height: 12px;
+    background-color: #111111;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid #000000;
+}
+
+#increment
+{
+    background-image: url("../images/slider_plus.png");    
+    border-left: 0;    
+}
+
+#decrement
+{
+    background-image: url("../images/slider_minus.png");    
+    border-right: 0;  
+} 
+
+#slider:not([disabled]) #increment:hover
+{
+    background-image: url("../images/slider_plus_hover.png");
+}
+
+#slider:not([disabled]) #decrement:hover
+{
+    background-image: url("../images/slider_minus_hover.png");
+}
+
+#slider[disabled] #increment
+{
+    background: transparent;
+    background-image: url("../images/slider_plus_disabled.png");
+}
+
+#slider[disabled] #decrement
+{
+    background: transparent;
+    background-image: url("../images/slider_minus_disabled.png");
+}
+
+
+[type=text]
+{
+    width: 30px;
+    margin-left: 10px;
+    cursor: text;
+    font-size: 11px;
+    color: #999999;
+    border: 1px solid #000000;
+    /*height: 20px;*/
+    background-color: #393939;
+    padding: 2px 5px; 
+    text-align: center;   
+}
+
+input[type=text]:not([disabled])
+{
+    cursor: text;
+}
+
+input[type=text]:hover
+{
+    background-color: #555555;
+}
+input[type=text]:focus
+{
+    color: #EEEEEE;
+}
+
+input[type=text]:disabled
+{
+    background: #212121;
+    color: #555555;
+    cursor: default;
+}

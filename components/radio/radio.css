@@ -1,0 +1,43 @@
+input, label
+{
+    cursor: default;
+    color: #555;
+    font-size: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input:not(:disabled),
+input:not(:disabled) + label
+{
+    cursor: pointer;
+    color: #CCCCCC;
+}
+
+input
+{
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 4px;
+    background-image: url("./images/radio.png");
+    outline: none;
+}
+
+input:focus,
+input:hover
+{
+    background-position: 0 -18px;
+    outline: none;
+}
+
+input:disabled
+{
+    background-position: 0 -36px;
+}
+
+input:checked
+{
+    background-image: url("./images/radio_selected.png");
+}

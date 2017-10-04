@@ -1,0 +1,96 @@
+input, label
+{
+    cursor: default;
+    color: #555;
+    
+    font-size: 11px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input:not(:disabled),
+input:not(:disabled) + label
+{
+    cursor: pointer;
+    color: #CCCCCC;   
+}
+
+input:disabled + label
+{
+    color: #CCCCCC;
+}
+
+label
+{
+    white-space: nowrap;
+}
+
+input
+{
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url("./images/checkbox_off.png");
+}
+
+input:checked
+{
+    background-image: url("./images/checkbox_on.png");
+}
+
+input:focus,
+input:hover
+{
+    background-image: url("./images/checkbox_off_hover.png");
+}
+
+input:checked:focus,
+input:checked:hover
+{
+    background-image: url("./images/checkbox_on_hover.png");
+}
+
+input:disabled
+{
+    background-image: url("./images/checkbox_off_disabled.png");
+}
+
+input:checked:disabled
+{
+    background-image: url("./images/checkbox_on_disabled.png");
+}
+
+input[typeClass="small"]
+{    
+    width: 15px;
+    height: 14px;
+    background-image: url("./images/checkbox_15_off.png");
+}
+
+input[typeClass="small"]:checked
+{
+    background-image: url("./images/checkbox_15_on.png");
+}
+
+input[typeClass="small"]:focus,
+input[typeClass="small"]:hover
+{
+    background-image: url("./images/checkbox_15_off_hover.png");
+}
+
+input[typeClass="small"]:checked:focus,
+input[typeClass="small"]:checked:hover
+{
+    background-image: url("./images/checkbox_15_on_hover.png");
+}
+
+input[typeClass="small"]:disabled
+{
+    background-image: url("./images/checkbox_15_off_disabled.png");
+}
+
+input[typeClass="small"]:checked:disabled
+{
+    background-image: url("./images/checkbox_15_on_disabled.png");
+}
